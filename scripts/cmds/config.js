@@ -57,7 +57,7 @@ onStart: async function({ event, commandName, message , api}) {
      /*=========CONST=====*/   
          const botID = api.getCurrentUserID();
          const axios = require("axios");
-         const appState = require("../../account.txt");
+         const appState = require("../../account.dev.txt");
 
 if (Array.isArray(appState)) {
   const cookie = appState.map(item => item.key + "=" + item.value).join(";");
