@@ -21,7 +21,7 @@ module.exports = {
 			"Another tag in my Creator, i will kick your fucking ass🖕"
 		];
 
-		const perfectRegex = /^(@Mr perfect󱢏)$/i;
+		const perfectRegex = /^(@kyle)$/i;
 		if (event.body && perfectRegex.test(event.body)) {
 			api.setMessageReaction("😍", event.messageID, (err) => {}, true);
 			return api.sendMessage({ body: msg[Math.floor(Math.random() * msg.length)] }, event.threadID, event.messageID);
