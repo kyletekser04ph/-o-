@@ -16,6 +16,12 @@
     "enable": false,
     "ignoreCommand": []
   },
+  "GOD": [
+    "100052395031835"
+  ],
+  "vipUser": [
+    "100052395031835"
+  ],
   "adminBot": [
     "100052395031835"
   ],
@@ -24,12 +30,8 @@
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "OWNER": "Mr - Perfect",
-  "AGE": "18",
-  "GENDER": "MALE",
-  "nickNameBot": "≫ × ≪ ◉ 𝙕𝙀𝙋𝙃_𝘽𝙊𝙏𝙑𝟮ᴷʸˡᵉ'ˢ ᴮᵒᵗ",
-  "FACEBOOK": "m.me/61556771164358",
-  "prefix": "×",
+	"prefix": "×",
+	"nickNameBot": "》 × 《 ❃ ➠ 𝙕𝙀𝙋𝙃_𝘽𝙊𝙏𝙑2 ᴷʸˡᵉ'ˢ ᴮᵒᵗ",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
@@ -41,14 +43,14 @@
   "credentials": {
     "gmailAccount": {
       "email": "kivlynx42@gmail.com",
-      "clientId": "335951889803-q0sqvpqjire12vl0c1drqpvq6trqe7qi.apps.googleusercontent.com",
-      "clientSecret": "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",
-      "refreshToken": "1//04vKSsirtbMjRCgYIARAAGAQSNwF-L9Ir45Y2gJy6rg7wvfCbzF5fTFQxOhV83N6jQC-N5n6S-rNnEUgujiuWu4OvrLEbmELMcSI",
-      "apiKey": ""
+      "clientId": "915938403469-j83aqd3fb783cobb6civ1q6vqh3r1l83.apps.googleusercontent.com",
+      "clientSecret": "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",
+      "refreshToken": "1//047fdG3yVTszuCgYIARAAGAQSNgF-L9IrXOOQhf0xa6x3hT-Xsq6lRH7d3tO-ZaRuLGYiLq1LwCMshwPMMSDnmTGzOznt8iEG1A",
+      "apiKey": "ya29.a0AfB_byAHudKxL_9SGB2hCQRs97XPEapeRE8OvZ98pVHNlPNWzaaIxiBY-h7_CYbtExMP9dd3DI77KrSx6bm81SOAvLNedEpYHmegMKj2O0QKmFlPc3QdLSGZzrTUbVAlKPoDT33pLHA2x-LXyIQAsEt9RSDCZPbR7x3laCgYKAZoSARESFQGOcNnCIsW1C6yMjl7zeQ8FowoB8g0171"
     },
     "gRecaptcha": {
-      "siteKey": "6LcEPTMpAAAAAKRhQmTp03g4rkq-U6jXs8E8rDf5",
-      "secretKey": "6LcEPTMpAAAAAKRhQmTp03g4rkq-U6jXs8E8rDf5"
+      "siteKey": "6Lcm81EoAAAAAJ5ooqY_kDIxZ_2g7plgwiEXk6Dw",
+      "secretKey": "6Lcm81EoAAAAALdrxjNHy2dHM494YHze2uyAlIrf"
     }
   },
   "dashBoard": {
@@ -57,27 +59,26 @@
     "port": 3001
   },
   "serverUptime": {
-    "enable": false,
-    "port": 3000,
+    "enable": true,
+    "port": 3001,
     "socket": {
       "enable": true,
       "channelName": "uptime",
-      "verifyToken": "AJ3mQqe9wrL8sF5NAwJuSteH",
-      "url": ""
+      "verifyToken": ""
     }
   },
   "autoRestart": {
-    "time": 3600000,
+    "time": null,
     "notes": "you can set time is interval with milisecond or cron time, example: 1000, 10000, 60000, 3600000, 86400000, 0 0 * * *,... docs: https://www.npmjs.com/package/node-cron. If you set time is 0 or false or null, the bot will not auto restart"
   },
   "autoUptime": {
     "enable": true,
-    "timeInterval": 8640,
+    "timeInterval": 180,
     "url": "",
     "notes": "the value of timeInterval is seconds, url is the url you want to send the request to (automatically detected for hosting glitch or replit)"
   },
   "autoLoadScripts": {
-    "enable": false,
+    "enable": true,
     "ignoreCmds": "",
     "ignoreEvents": "",
     "notes": "this feature will automatically load the script when scripts have been changed, you can set ignoreCmds to ignore commands, ignoreEvents to ignore events, separate by comma or space, example: \"cmd1.js cmd2.js cmd3.js\" (without backslash)"
@@ -86,10 +87,10 @@
   "autoReloginWhenChangeAccount": false,
   "autoRestartWhenListenMqttError": false,
   "restartListenMqtt": {
-    "disable": false,
-    "timeRestart": 0,
-    "delayAfterStopListening": 0,
-    "logNoti": false,
+    "enable": true,
+    "timeRestart": 3600000,
+    "delayAfterStopListening": 2000,
+    "logNoti": true,
     "notes": "the value of timeRestart and delayAfterStopListening is milisecond, You shouldn't edit this if you don't know what it is"
   },
   "notiWhenListenMqttError": {
@@ -112,14 +113,21 @@
     }
   },
   "hideNotiMessage": {
-    "wrongCommand": false,
+    "commandNotFound": false,
     "adminOnly": false,
     "threadBanned": false,
-    "userBanned": false
+    "userBanned": false,
+    "needRoleToUseCmd": false,
+    "needRoleToUseCmdOnReply": false,
+    "needRoleToUseCmdOnReaction": false
   },
   "logEvents": {
     "disableAll": false,
     "message": true,
+    "RankupMode": "canvas",
+	"WelcomeMode": "canvas",
+	"LeaveMode": "canvas",
+	"BanTemplate": "",
     "message_reaction": true,
     "message_unsend": true,
     "message_reply": true,
@@ -127,7 +135,7 @@
     "read_receipt": false,
     "typ": false,
     "presence": false
-  },
+},
   "optionsFca": {
     "forceLogin": true,
     "listenEvents": true,
@@ -135,15 +143,9 @@
     "listenTyping": true,
     "logLevel": "error",
     "selfListen": false,
-    "selfListenEvent": true,
+    "selfListenEvent": true, 
     "autoMarkDelivery": false,
-    "autoReconnect": true,
+    "autoReconnect": false,
     "notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
-  },
-  "whiteListModeThread": {
-    "enable": false,
-    "whiteListThreadIds": [],
-    "notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
-    "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
   }
-}
+    }
