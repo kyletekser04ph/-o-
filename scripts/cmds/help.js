@@ -1,6 +1,3 @@
-const { GoatWrapper } = require('fca-liane-utils');
- const fs = require("fs-extra");
-const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
@@ -223,6 +220,3 @@ function cropContent(content, max = 50) {
     }
     return content;
       }
-
-const wrapper = new GoatWrapper(module.exports);
-wrapper.applyNoPrefix({ allowPrefix: true });
